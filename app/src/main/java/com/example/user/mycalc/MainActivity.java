@@ -15,17 +15,27 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
-    EditText num1,num2;
+    EditText input1,input2;
     Button btn1,btn2,btn3,btn4;
     TextView sview;
+
+    int num1, num2, result;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        num1 = (EditText) findViewById(R.id.num1);
-        num2 = (EditText) findViewById(R.id.num2);
+        input1 = (EditText) findViewById(R.id.input1);
+        num1 = Integer.parseInt(input1.toString());
+        input2 = (EditText) findViewById(R.id.input2);
+        num2 = Integer.parseInt(input2.toString());
+
+        result = num1 + num2;
+        result = num1 - num2;
+        result = num1 * num2;
+        result = num1 / num2;
+        result = num1 % num2;
 
         btn1 = (Button) findViewById(R.id.btn1);
         btn2 = (Button) findViewById(R.id.btn2);
@@ -33,5 +43,8 @@ public class MainActivity extends Activity {
         btn4 = (Button) findViewById(R.id.btn4);
 
         sview = (TextView) findViewById(R.id.sview);
+
+        )
+
     }
 }

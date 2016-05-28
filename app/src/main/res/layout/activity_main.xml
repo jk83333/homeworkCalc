@@ -9,13 +9,13 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="숫자1"
-        android:id="@+id/num1"/>
+        android:id="@+id/input1"/>
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="숫자2"
-        android:id="@+id/num2"/>
+        android:id="@+id/input2"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
